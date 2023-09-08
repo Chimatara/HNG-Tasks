@@ -46,7 +46,7 @@ function updateProfileInfo() {
   
     // GitHub URL
     const githubURLElement = document.querySelector('[data-testid="githubURL"]');
-    githubURLElement.href = 'https://github.com/yourusername/your-repo'; 
+    githubURLElement.href = 'https://github.com/Chimatara/HNG-Tasks'; 
   }
   
   // Call the updateProfileInfo function when the page loads
