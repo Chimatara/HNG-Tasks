@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HNG-Tasks</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="left-info">
+        <!-- HEADER -->
+        <nav>
+            <a id="logo" href=""></a>
+            <a id="contact" href=""></a>
+        </nav>
+
+        <div class="container">
+            <!-- SLACK NAME -->
+          <h1 data-testid="slackUserName"></h1>
+
+          <div class="intro">
+            <span>Hi, I'm </span>
+            <span id="myName"></span>
+            <span 
+              >a frontend developer passionate about making user-friendly and
+              mobile responsive interfaces. I'm pleased to meet you.</span
+            >
+          </div>
+
+          <p id="first-p" data-testid="currentDayOfTheWeek">Day of the Week</p>
+          <p data-testid="currentUTCTime"></p>
+          <p data-testid="myTrack"></p>
+
+          
+          <div class="info">
+            <div class="button-container">
+
+                <a class="button" href = "mailto:chimatarakalu@gmail.com?subject = Feedback&body = Message">
+                  <button class="btn">Say Hello</button>
+                </div>
+                  </a>
+                  <div class="github">
+
+                      <a
+                        href=""
+                        data-testid="githubURL"
+                        ><i class="fa fa-github"></i></a>
+                      <a
+                        href="https://twitter.com/taras_collectn"
+                        data-testid="twitterURL"
+                        ><i class="fa fa-twitter"></i></a>
+                      <a
+                        href="https://https://www.linkedin.com/in/chimatara-kalu-32838a236"
+                        data-testid="linkedURL"
+                        ><i class="fa fa-linkedin"></i></a>
+                  </div>
+           
+            </div>
+        </div>
+      </section>
+      <section class="right-info">
+        <!-- SLACK DISPLAY PICTURE -->
+        <img
+          src=""
+          alt=""
+          data-testid="slackDisplayImage"
+        />
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
