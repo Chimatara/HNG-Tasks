@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@500&family=Quicksand:wght@500&display=swap');
+
+:root{
+    --border: 1px solid rgb(176, 175, 175)y;
+    --borderRadius1: 15px 0 0 15px;
+    --borderRadius2: 0 15px 15px 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    position: relative;
+    background: whitesmoke;
+    font-family: 'Lexend Deca', sans-serif;
+}
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px; 
+    justify-content: center;
+}
+.left-info{
+    position: relative;
+    background: #ffff;
+    width: 45%;
+    border-radius: var(--borderRadius1);
+    border: var(--border);
+}
+.right-info{
+    display: flex;
+    justify-content: center;
+    background: #1b1c1e;
+    width: 45%;
+    border-radius: var(--borderRadius2);
+    border: var(--border);
+}
+.right-info img{
+  width: 100%;
+  height: 90vh;
+  border-radius: var(--borderRadius2);
+  border: var(--border);
+}
+.container{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
+}
+h1{
+    font-size: 5rem;
+}
+.intro{
+margin: 20px 0;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.button{
+    text-decoration: none;
+}
+.btn{
+    background: #5D8C3F;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+.github{
+   margin-top: 20px;
+}
+.fa{
+    font-size: 30px;
+    color: black;
+    padding:10px;
+}
+nav{
+    margin-left: 50px;
+    padding: 30px;
+}
+nav a{
+    font-size: 1.3rem;
+    font-weight: bolder;
+   padding: 10px;
+   text-decoration: none;
+   color: #1b1c1e;
+}
+#contact:hover{
+    text-decoration: underline #5D8C3F;
+    padding: 10px;
+    width: 120px;
+    margin-top: 30px;
+    /* font-size: 0.8rem; */
+    transition: 0.5 ease-out;
+   
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 835px) {
+    main{
+      flex-direction: column;
+    }
+  .left-info{
+      position: relative;
+      background: inherit;
+      width: 100%;
+      border: none;
+      order: 2;
+      top: -370px;
+  }
+  .right-info{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border: none;
+      background: inherit;
+      order: 1;
+      top: -100px;
+  }
+  .right-info img{
+    width: 50%;
+    height: auto;
+    border-radius: 200px;
+    border: var(--border);
+  }
+  .container{
+      position: absolute;
+      top: -50%;
+      left: 25%;
+      transform: translate(-25%, -25%); 
+   }
+   h1{
+       font-size: 4rem;
+       margin-top: 550px;
+       padding-bottom: 10px;
+   }
+   .intro{
+    margin: 0;
+   }
+   #first-p{
+      padding-top: 20px;
+   }
+  p{
+      padding-bottom: 5px;
+  }
+   nav{
+     /* display: none; */
+     position: relative;
+     top: -300px;
+     margin-left: 0;
+     font-size: 2rem;
+   }
+   .fa{
+      font-size: 30px;
+      padding: 10px;
+  }
+  .github{
+      margin-top: 25px;
+   }
+   .btn{
+    width: 120px;
+   }
+  }
+
+  @media (max-width: 767px) {
+    main{
+      flex-direction: column;
+    }
+  .left-info{
+      position: relative;
+      background: inherit;
+      width: 100%;
+      border: none;
+      order: 2;
+      top: -10px;
+  }
+  .right-info{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border: none;
+      background: inherit;
+      order: 1;
+      top: -100px;
+  }
+  .right-info img{
+    width: 50%;
+    height: auto;
+    border-radius: 200px;
+    border: var(--border);
+  }
+  .container{
+      position: absolute;
+      top: -50%;
+      left: 25%;
+      transform: translate(-25%, -25%); 
+   }
+   h1{
+       font-size: 4rem;
+       margin-top: 550px;
+       padding-bottom: 10px;
+   }
+   .intro{
+    margin: 0;
+   }
+   #first-p{
+      padding-top: 20px;
+   }
+  p{
+      padding-bottom: 5px;
+  }
+   nav{
+     /* display: none; */
+     position: relative;
+     top: -300px;
+     margin-left: 0;
+     font-size: 2rem;
+   }
+   .fa{
+      font-size: 30px;
+      padding: 10px;
+  }
+  .github{
+      margin-top: 25px;
+   }
+   .btn{
+    width: 120px;
+   }
+  }
+
+@media (max-width: 428px) {
+  main{
+    flex-direction: column;
+  }
+.left-info{
+    position: relative;
+    background: inherit;
+    width: 100%;
+    border: none;
+    order: 2;
+    top: -140px;
+}
+.right-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    background: inherit;
+    order: 1;
+    top: -120px;
+}
+.right-info img{
+  width: 50%;
+  height: auto;
+  border-radius: 200px;
+  border: var(--border);
+}
+.container{
+    position: absolute;
+    top: -50%;
+    left: 25%;
+    transform: translate(-25%, -25%); 
+ }
+ h1{
+     font-size: 2rem;
+     margin-top: 230px;
+     padding-bottom: 10px;
+ }
+ .intro{
+  margin: 0;
+ }
+ #first-p{
+    padding-top: 20px;
+ }
+p{
+    padding-bottom: 5px;
+}
+ nav{
+   /* display: none; */
+   position: relative;
+   top: -300px;
+   margin-left: 0;
+ }
+ .fa{
+    font-size: 23px;
+    padding: 8px;
+}
+.github{
+    margin-top: 25px;
+ }
+}
+
+
+@media (max-width: 428px) {
+  main{
+    flex-direction: column;
+  }
+.left-info{
+    position: relative;
+    background: inherit;
+    width: 100%;
+    border: none;
+    order: 2;
+    top: -140px;
+}
+.right-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    background: inherit;
+    order: 1;
+    top: -120px;
+}
+.right-info img{
+  width: 50%;
+  height: auto;
+  border-radius: 200px;
+  border: var(--border);
+}
+.container{
+    position: absolute;
+    top: -50%;
+    left: 25%;
+    transform: translate(-25%, -25%); 
+ }
+ h1{
+     font-size: 2rem;
+     margin-top: 230px;
+     padding-bottom: 10px;
+ }
+ .intro{
+  margin: 0;
+ }
+ #first-p{
+    padding-top: 20px;
+ }
+p{
+    padding-bottom: 5px;
+}
+ nav{
+   /* display: none; */
+   position: relative;
+   top: -300px;
+   margin-left: 0;
+ }
+ .fa{
+    font-size: 23px;
+    padding: 8px;
+}
+.github{
+    margin-top: 25px;
+ }
+}
+
+
+@media (max-width: 385px) {
+  main{
+    flex-direction: column;
+  }
+.left-info{
+    position: relative;
+    background: inherit;
+    width: 100%;
+    border: none;
+    order: 2;
+    top: -80px;
+}
+.right-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    background: inherit;
+    order: 1;
+    top: -100px;
+}
+.right-info img{
+  width: 50%;
+  height: auto;
+  border-radius: 200px;
+  border: var(--border);
+}
+.container{
+    position: absolute;
+    top: -50%;
+    left: 25%;
+    transform: translate(-25%, -25%); 
+ }
+ h1{
+     font-size: 2rem;
+     margin-top: 150px;
+     padding-bottom: 10px;
+ }
+ .intro{
+  margin: 0;
+ }
+ #first-p{
+    padding-top: 20px;
+ }
+p{
+    padding-bottom: 5px;
+}
+ nav{
+   /* display: none; */
+   position: relative;
+   top: -300px;
+   margin-left: 0;
+ }
+ .fa{
+    font-size: 23px;
+    padding: 8px;
+}
+.github{
+    margin-top: 25px;
+ }
+}
+
+
+@media (max-width: 320px) {
+  main{
+    flex-direction: column;
+  }
+.left-info{
+    position: relative;
+    background: inherit;
+    width: 100%;
+    border: none;
+    order: 2;
+    top: -50px;
+}
+.right-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    background: inherit;
+    order: 1;
+    top: -30px;
+}
+.right-info img{
+  width: 50%;
+  height: auto;
+  border-radius: 200px;
+  border: var(--border);
+}
+.container{
+    position: absolute;
+    top: -50%;
+    left: 25%;
+    transform: translate(-25%, -25%); 
+ }
+ h1{
+     font-size: 2rem;
+     margin-top: 250px;
+     padding-bottom: 10px;
+ }
+ .intro{
+  margin: 0;
+ }
+ #first-p{
+    padding-top: 20px;
+ }
+p{
+    padding-bottom: 5px;
+}
+ nav{
+   /* display: none; */
+   position: relative;
+   top: -230px;
+   margin-left: 0;
+ }
+ .fa{
+    font-size: 20px;
+    padding: 8px;
+}
+.github{
+    margin-top: 25px;
+ }
+ .btn{
+    width: 100px;
+   margin-bottom: 20px;
+}
+}
